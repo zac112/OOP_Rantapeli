@@ -17,6 +17,17 @@ public void MoveItem(int prosent)
     mask.transform.position = new UnityEngine.Vector3(x-move,y,z);
 }
 
+    /*GameObject-skriptissä täytyy olla Start()-metodi, jossa on vähän sama idea kuin konstruktorissa.
+     * Tässä pitäisi ilmeisesti määrittää myös objektin sijainti jollain transform.position-käskyllä? En ole varma
+     * ks. Unityn dokumentaatio https://docs.unity3d.com/Manual/CreateDestroyObjects.html
+     * https://docs.unity3d.com/Manual/CreatingAndUsingScripts.html
+     */
+    void Start()
+    {
+        Instantiate(mask);
+
+    }
+
 void Update()
 {
     MoveItem(50);
