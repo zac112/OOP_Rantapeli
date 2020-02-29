@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1757634621302018003}
   - component: {fileID: 5310617609912710096}
   - component: {fileID: -1047782289238842469}
+  - component: {fileID: -1275807520757966087}
   m_Layer: 0
   m_Name: beachperson
   m_TagString: Untagged
@@ -143,3 +144,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b7dcf32b2690ad4083809ee5f6b6ae9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-1275807520757966087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2927114960658232329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e44dded25234c34097a11532fac2e90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minLifeTime: 5
+  maxLifeTime: 5
