@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class movelevel : MonoBehaviour
 {
-    public float speed = 250f;
+    public float speed = 5;
 
     // Start is called before the first frame update
     void Start()
