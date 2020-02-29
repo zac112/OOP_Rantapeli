@@ -11,7 +11,7 @@ public class PlayerJump : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        jump = new Vector3(0.0f, 2.0f, 0.0f);
+        jump = new Vector3(0.0f, jumpHeight, 0.0f);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
