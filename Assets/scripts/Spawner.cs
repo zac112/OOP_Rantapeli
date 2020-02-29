@@ -34,7 +34,7 @@ public class Spawner : MonoBehaviour
         BoxCollider2D collider = gameObject.GetComponent<BoxCollider2D>();
         while (true)
         {
-            int rndSprite = Random.Range(0, 3);
+            int rndSprite = Random.Range(0, 4);
 
             float waitTime = Random.Range(minWaitTime, maxWaitTime);
 
