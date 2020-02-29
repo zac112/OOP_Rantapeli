@@ -187,6 +187,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 336969657}
+  - component: {fileID: 336969658}
   m_Layer: 0
   m_Name: MaaliWaypoint
   m_TagString: Untagged
@@ -208,6 +209,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &336969658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336969656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9944b7c755d801f48bd974f42d3e5ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &432439206
 GameObject:
   m_ObjectHideFlags: 0
@@ -221,7 +234,7 @@ GameObject:
   - component: {fileID: 432439209}
   m_Layer: 2
   m_Name: esteetTausta (2)
-  m_TagString: Untagged
+  m_TagString: Tausta
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -604,7 +617,7 @@ GameObject:
   - component: {fileID: 1186904226}
   m_Layer: 2
   m_Name: Generaattori
-  m_TagString: Untagged
+  m_TagString: Tausta
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -642,10 +655,11 @@ MonoBehaviour:
   - {fileID: 888128875857870963, guid: 3735449d660037b4fbcb3044ab2d1611, type: 3}
   - {fileID: 6170345859303111541, guid: 61cc4feaee26c5f409a30a4363d6a919, type: 3}
   ilmaesteet:
-  - {fileID: 3491169271000058160, guid: c2d4e66b6a1dc664899ccef1a7fa9c79, type: 3}
+  - {fileID: 8353194918947869270, guid: dcf664ce50224f94e93d615fb432a029, type: 3}
   - {fileID: 3491169271000058160, guid: c2d4e66b6a1dc664899ccef1a7fa9c79, type: 3}
   maa: {fileID: 1392235324}
   ilma: {fileID: 1414146308}
+  maxwait: 5
 --- !u!1 &1392235322
 GameObject:
   m_ObjectHideFlags: 0
@@ -658,7 +672,7 @@ GameObject:
   - component: {fileID: 1392235324}
   m_Layer: 2
   m_Name: maa
-  m_TagString: Untagged
+  m_TagString: Tausta
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -715,7 +729,7 @@ GameObject:
   - component: {fileID: 1414146308}
   m_Layer: 2
   m_Name: ilma
-  m_TagString: Untagged
+  m_TagString: Tausta
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -773,7 +787,7 @@ GameObject:
   - component: {fileID: 1564785761}
   m_Layer: 2
   m_Name: esteetTausta (1)
-  m_TagString: Untagged
+  m_TagString: Tausta
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -886,7 +900,7 @@ PrefabInstance:
     - target: {fileID: 3051506827873777124, guid: d8d8373936d05cc43b8aff869aa04e7d,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3051506827873777125, guid: d8d8373936d05cc43b8aff869aa04e7d,
         type: 3}
@@ -911,7 +925,7 @@ PrefabInstance:
     - target: {fileID: 3051506827873777127, guid: d8d8373936d05cc43b8aff869aa04e7d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 3051506827873777127, guid: d8d8373936d05cc43b8aff869aa04e7d,
         type: 3}

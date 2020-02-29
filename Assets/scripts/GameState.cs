@@ -10,27 +10,19 @@ public class GameState : MonoBehaviour
     public GameObject maali = null;
 
     void Awake() {
-        Init();
+        maali = new GameObject();
+        singleton = this;
+        DontDestroyOnLoad(gameObject); 
+        
     }
 
-    private static void Init() {
-        if (singleton == null)
-        {
-            GameObject go = new GameObject();
-            singleton = go.AddComponent<GameState>();
-            singleton.maali = new GameObject();
-            DontDestroyOnLoad(go);
-        }
-    }
 
     public static void SetMaali(GameObject maali)
     {
-        Init();
         singleton.maali = maali;
     }
 
     public static GameObject GetMaali() {
-        Init();
         return singleton.maali;
     }
     private void LoadRantaScene() { 
@@ -38,12 +30,12 @@ public class GameState : MonoBehaviour
     }
 
     public static void LoseRun() {
-        Init();
         singleton.LoadRantaScene();
+        print("LOST!");
     }
 
     public static void WinRun() {
-        Init();
         singleton.LoadRantaScene();
+        print("WON!");
     }
 }

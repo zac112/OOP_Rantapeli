@@ -21,10 +21,9 @@ public class BackgroundMover : MonoBehaviour
 
     void OnBecameInvisible() {
         transform.position = new Vector3(transform.position.x+maara, transform.position.y, transform.position.z);
-        if (Random.value < 0.5f)
+        if (GameState.GetMaali() != null && Random.value < 0.8f)
         {
             GameState.GetMaali().SetActive(true);
-            GameState.GetMaali().transform.position = waypoint.transform.position;
         }
     }
 }

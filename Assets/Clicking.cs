@@ -11,6 +11,8 @@ public class Clicking : MonoBehaviour
         GameState.SetMaali(gameObject);
         DontDestroyOnLoad(gameObject);
         gameObject.SetActive(false);
+        Destroy(this);
+        Destroy(GetComponent<Dying>());
         SceneManager.LoadScene(scenes[Random.Range(0, scenes.Length)]);
     }
 

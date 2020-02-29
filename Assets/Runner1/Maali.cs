@@ -4,9 +4,17 @@ using UnityEngine;
 
 public class Maali : MonoBehaviour
 {
+
     void OnTriggerEnter2D(Collider2D col)
     {
-        Destroy(gameObject);
-        GameState.WinRun();
+        if (col.tag.Equals("Player"))
+        {
+            Destroy(gameObject);
+            GameState.WinRun();
+        }
+        else if (!col.tag.Equals("Tausta"))
+        {
+            Destroy(col.gameObject);
+        }
     }
 }
