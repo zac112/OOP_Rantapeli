@@ -37,7 +37,7 @@ public class Spawner : MonoBehaviour
             yield return new WaitForSeconds(waitTime);
 
             Debug.Log("WaitAndPrint " + Time.time);
-            Instantiate(spawns[rndSprite], new Vector3(Random.Range(-7f, 7f), Random.Range(-1.5f, 2f), 0), Quaternion.identity);
+            Instantiate(spawns[rndSprite], new Vector3(Random.Range(-7f, 7f), Random.Range(-1.5f, 2f), -3), Quaternion.identity);
         }
     }
 }
