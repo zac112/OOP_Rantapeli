@@ -6,6 +6,8 @@ public class Spawner : MonoBehaviour
 {
     [SerializeField]
     GameObject[] spawns = null;
+    [SerializeField]
+    float maxWaitTime, minWaitTime;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,13 +33,14 @@ public class Spawner : MonoBehaviour
     {
         while (true)
         {
-            int rndSprite = Random.Range(0, 3);
-            float waitTime = Random.Range(1f, 2f);
+            BoxCollider2D collider = gameObject.GetComponent<BoxCollider2D>();
+            int rndSprite = Random.Range(0, 4);
+            float waitTime = Random.Range(minWaitTime, maxWaitTime);
 
             yield return new WaitForSeconds(waitTime);
 
             Debug.Log("WaitAndPrint " + Time.time);
-            Instantiate(spawns[rndSprite], new Vector3(Random.Range(-7f, 7f), Random.Range(-1.5f, 2f), -3), Quaternion.identity);
+            Instantiate(spawns[rndSprite], new Vector3(Random.Range(collider.bounds.min.x, collider.bounds.max.x), Random.Range(collider.bounds.min.y, collider.bounds.max.y), -3), Quaternion.identity);
         }
     }
 }
