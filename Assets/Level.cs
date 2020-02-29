@@ -34,6 +34,5 @@ public class Level : MonoBehaviour
         UpdateXp(5);
 
     }
-    public int get
 
 }
