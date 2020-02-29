@@ -9,7 +9,7 @@ public class movelevel : MonoBehaviour
     void Start()
     {
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        rb.AddForce(Vector3.left*speed);
+        rb.AddForce(Vector3.right*speed);
     }
 
     // Update is called once per frame
