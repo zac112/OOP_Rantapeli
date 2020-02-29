@@ -8,24 +8,30 @@ public class PlayerMove : MonoBehaviour
     public float faster = 1.2f;
     public float slower = 0.8f;
 
+    private float multiplier = 1;
+     public Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
+  
     }
+
+
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKey(KeyCode.D)) {
-            transform.position += Vector3.right * (speed * faster) * Time.deltaTime;
+           multiplier = faster;
         }
         else if (Input.GetKey(KeyCode.A))
         {
-            transform.position += Vector3.right * (speed * slower) * Time.deltaTime;
+           multiplier = slower;
         }
         else {
-            transform.position += Vector3.right * speed * Time.deltaTime;
+            multiplier = 1;
         }
+        rb.velocity = new Vector2(speed * Time.deltaTime*multiplier, rb.velocity.y);
         
     }
     
