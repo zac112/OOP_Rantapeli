@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerJump : MonoBehaviour
 {
     bool isGrounded;
-    public float jumpHeight;
+    public float jumpHeight = 15;
     Vector3 jump;
     Rigidbody2D rb;
     void Start()
@@ -33,7 +33,7 @@ public class PlayerJump : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space) && isGrounded)
         {
-            rb.AddForce(jump * jumpHeight, ForceMode2D.Impulse);
+            rb.AddForce(jump * jumpHeight, ForceMode2D.Force);
             //isGrounded = false;
         }
     }
