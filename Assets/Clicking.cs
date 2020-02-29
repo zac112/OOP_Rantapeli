@@ -5,21 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Clicking : MonoBehaviour
 {
-
+    [SerializeField] int[] scenes;
     private void OnMouseDown()
     {
-        SceneManager.LoadScene("SampleScene");
-        print("SceneChange");        
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+        GameState.SetMaali(gameObject);
+        DontDestroyOnLoad(gameObject);
+        gameObject.SetActive(false);
+        SceneManager.LoadScene(scenes[Random.Range(0, scenes.Length)]);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
