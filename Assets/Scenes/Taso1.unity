@@ -471,7 +471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aika: 3
-  loppu: 10
+  loppu: 5
 --- !u!61 &1035398981
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -768,7 +768,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aika: 3
-  loppu: 10
+  loppu: 8
 --- !u!61 &1722048969
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -992,7 +992,7 @@ PrefabInstance:
     - target: {fileID: 6363854759639308540, guid: 9aff242992ee67b408cb4f86c73fd2df,
         type: 3}
       propertyPath: speed
-      value: 100
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 6363854759639308540, guid: 9aff242992ee67b408cb4f86c73fd2df,
         type: 3}
