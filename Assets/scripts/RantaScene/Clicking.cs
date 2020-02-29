@@ -9,11 +9,10 @@ public class Clicking : MonoBehaviour
     private void OnMouseDown()
     {
         GameState.SetMaali(gameObject);
-        DontDestroyOnLoad(gameObject);
-        gameObject.SetActive(false);
+        DontDestroyOnLoad(gameObject);        
         Destroy(this);
         Destroy(GetComponent<Dying>());
-        SceneManager.LoadScene(scenes[Random.Range(0, scenes.Length)]);
+        GameObject.FindGameObjectWithTag("Player").GetComponent<CutSceneTimer>().GoSaveVictims();
     }
 
 }

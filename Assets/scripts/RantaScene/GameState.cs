@@ -38,4 +38,14 @@ public class GameState : MonoBehaviour
         singleton.LoadRantaScene();
         print("WON!");
     }
+
+    public static void LoseGame()
+    {
+
+    }
+
+    public static void WinGame()
+    {
+
+    }
 }

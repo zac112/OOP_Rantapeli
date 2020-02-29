@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Thirst : MonoBehaviour
 {
-    [SerializeField]
-    public int thirst = 5;
+    
+    [SerializeField] public int thirst = 90;
+    [SerializeField] float waitTime = 1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,19 +20,20 @@ public class Thirst : MonoBehaviour
     public void Drink()
     {
         thirst++;
+        GetComponent<Maski>().MoveItem(thirst);
     }
     private IEnumerator ThirstGrow()
     {
         while (true)
         {
-            float waitTime = 4f;
-
             yield return new WaitForSeconds(waitTime);
             thirst--;
+            GetComponent<Maski>().MoveItem(thirst);
             Debug.Log(thirst);
             if (thirst == 0)
             {
                 Object.Destroy(gameObject);
+                GameState.LoseGame();
             }
         }
     }
