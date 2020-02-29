@@ -21,19 +21,23 @@ public class Level : MonoBehaviour
             //You reached a new level!
         }
 
-        int xpnextlevel = 100 * (currentLevel +1) * (currentLevel +1);
+        int xpnextlevel = 10 * (currentLevel +1) * (currentLevel +1);
         int differencexp = xpnextlevel - XP;
 
         int totaldifference = xpnextlevel - (100 * currentLevel * currentLevel);
+        gameObject.GetComponent<Maski>().MoveItem((int)((differencexp/xpnextlevel)*100));
     }
 
     // Update is called once per frame
     void Update()
     {
-         
+        if(Input.GetKeyDown("space"))
+        {
         UpdateXp(5);
 
+        }
+         
+
     }
-    public int get
 
 }
