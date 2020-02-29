@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/scripts/movement.cs.meta
 guid: 7c237350428fc2b48b5fee77de2b7538
+=======
+guid: ba87bd717e80ce041a58bae0cb07c4c4
+>>>>>>> a73ea40d6d4478251c9c83f42e0922dce816a87c:Assets/Spawner.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
