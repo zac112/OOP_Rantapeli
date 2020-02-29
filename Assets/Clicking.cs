@@ -8,7 +8,6 @@ public class Clicking : MonoBehaviour
 
     private void OnMouseDown()
     {
-
         SceneManager.LoadScene("SampleScene");
         print("SceneChange");        
     }
