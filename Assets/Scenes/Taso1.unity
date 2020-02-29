@@ -467,9 +467,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1035398979}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d1272c59f0cf24189c23284f181e6b, type: 3}
+  m_Script: {fileID: 11500000, guid: 7e6711175da089348834862c4a760167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aika: 3
+  loppu: 10
 --- !u!61 &1035398981
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -615,7 +617,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4183386415708824, guid: c1bee09c88207064ca42d6ebc274c572, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.38
+      value: 3.58
       objectReference: {fileID: 0}
     - target: {fileID: 4183386415708824, guid: c1bee09c88207064ca42d6ebc274c572, type: 3}
       propertyPath: m_LocalPosition.z
@@ -765,6 +767,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e6711175da089348834862c4a760167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aika: 3
+  loppu: 10
 --- !u!61 &1722048969
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -995,6 +999,21 @@ PrefabInstance:
       propertyPath: rb
       value: 
       objectReference: {fileID: 1993969233}
+    - target: {fileID: 6363854759774685688, guid: 9aff242992ee67b408cb4f86c73fd2df,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 6363854759774685688, guid: 9aff242992ee67b408cb4f86c73fd2df,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 6363854759774685695, guid: 9aff242992ee67b408cb4f86c73fd2df,
+        type: 3}
+      propertyPath: orthographic size
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9aff242992ee67b408cb4f86c73fd2df, type: 3}
 --- !u!1001 &2097521996
