@@ -19,7 +19,7 @@ public class PlayerMove : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (Input.GetKey(KeyCode.D)) {
            multiplier = faster;
@@ -31,7 +31,7 @@ public class PlayerMove : MonoBehaviour
         else {
             multiplier = 1;
         }
-        rb.velocity = new Vector2(speed * Time.deltaTime*multiplier, rb.velocity.y);
+        rb.velocity = new Vector2(speed*multiplier, rb.velocity.y);
         
     }
     
