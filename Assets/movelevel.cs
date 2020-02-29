@@ -8,7 +8,7 @@ public class movelevel : MonoBehaviour
     public Rigidbody2D rb;
     public double c1;
     public double c2;
-    
+    public int counter;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,8 +19,16 @@ public class movelevel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if()
-            speed=250f;
+        if(counter<5){
+            counter++;
+        }
+        else{
+        c1=transform.position.x;
+        if(c1==c2){
             rb.AddForce(Vector3.right*speed);
+        }
+        c2=transform.position.x;
+        }
     }
+    
 }
