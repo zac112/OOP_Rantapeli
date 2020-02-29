@@ -27,8 +27,7 @@ public class PlayerJump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded){
-            Debug.Log("space");        
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded){  
             rb.AddForce(jump * jumpHeight, ForceMode2D.Impulse);
             //isGrounded = false;
         }
