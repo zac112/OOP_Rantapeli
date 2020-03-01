@@ -5,31 +5,24 @@ using UnityEngine;
 
 public class Level : MonoBehaviour
 {
-    public int XP;
+    public int XP=0;
 
 
     public void UpdateXp(int x)
     {
         XP += x;
-        
-            
-        gameObject.GetComponent<XPMask>().MoveItem(x);
-
         if(XP > 100){
             XP=0;
-        }
+        }   
+        gameObject.GetComponent<XPMask>().MoveItem(XP);
+
+        
     }
 
-    // Update is called once per frame
-    void Update()
+    public int GetXP()
     {
-        if(Input.GetKeyDown("space"))
-        {
-        UpdateXp(25);
-
-        }
-         
-
+        return XP;
     }
+
 
 }
