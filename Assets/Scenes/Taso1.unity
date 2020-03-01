@@ -286,6 +286,46 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &323254119 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3007632036612577152, guid: 9aff242992ee67b408cb4f86c73fd2df,
+    type: 3}
+  m_PrefabInstance: {fileID: 2054751479}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &323254125
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323254119}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 06eb817746983f744a137caf07c1c720, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!111 &323254126
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323254119}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 950308d2d7adacc4993b6e569ae94b23, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1001 &485076558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1811,7 +1851,7 @@ PrefabInstance:
     - target: {fileID: 3007632036612577164, guid: 9aff242992ee67b408cb4f86c73fd2df,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1.11
       objectReference: {fileID: 0}
     - target: {fileID: 3007632036612577164, guid: 9aff242992ee67b408cb4f86c73fd2df,
         type: 3}
@@ -1898,7 +1938,8 @@ PrefabInstance:
       propertyPath: orthographic size
       value: 5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3415199079803892334, guid: 9aff242992ee67b408cb4f86c73fd2df, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9aff242992ee67b408cb4f86c73fd2df, type: 3}
 --- !u!1001 &2097521996
 PrefabInstance:
