@@ -9,11 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1645686115066488808}
+  - component: {fileID: 1223667167301122152}
   - component: {fileID: 3125947099866688203}
   - component: {fileID: -4696142208096463094}
   - component: {fileID: 6246751215978976998}
   - component: {fileID: -9193256134339635307}
-  - component: {fileID: 8471635718706980148}
+  - component: {fileID: 1568693305052856486}
+  - component: {fileID: 6212496655131374599}
   m_Layer: 0
   m_Name: beachman
   m_TagString: Untagged
@@ -35,6 +37,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1223667167301122152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5274217029811200052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e44dded25234c34097a11532fac2e90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minLifeTime: 5
+  maxLifeTime: 5
+  death: {fileID: 5606726440434991869, guid: 339d1ce0108bd9e47ab7af7e70b62651, type: 3}
 --- !u!212 &3125947099866688203
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -145,18 +162,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scenes: 0100000002000000
---- !u!114 &8471635718706980148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5274217029811200052}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e44dded25234c34097a11532fac2e90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minLifeTime: 5
-  maxLifeTime: 5
-  death: {fileID: 5606726440434991869, guid: 339d1ce0108bd9e47ab7af7e70b62651, type: 3}

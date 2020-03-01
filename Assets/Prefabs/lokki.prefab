@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 4570035978399869350}
   - component: {fileID: 4570035978399869349}
   m_Layer: 0
-  m_Name: lokki 1
-  m_TagString: Untagged
+  m_Name: lokki
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,9 +108,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4570035978399869345}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a901294a17055349a47d9e622ca8c46, type: 3}
+  m_Script: {fileID: 11500000, guid: 19b5ea7f435f4dc4aa4ea8c1ce20b004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   flySpeed: 3
   startDelay: 1
   bottomTime: 1
+  bottomPosition: 0
