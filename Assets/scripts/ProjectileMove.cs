@@ -22,10 +22,6 @@ public class ProjectileMove : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D pepega)
     {
-        if(pepega.gameObject.GetComponent<health>() != null){
-            Debug.Log("mfw");
-            pepega.gameObject.GetComponent<health>().getDamage();
-        }
         Destroy(this.gameObject);
     }
    
