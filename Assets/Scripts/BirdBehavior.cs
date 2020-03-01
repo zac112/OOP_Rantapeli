@@ -15,7 +15,7 @@ public class BirdBehavior : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Vector3 newPosition = transform.position; // We store the current position
         newPosition.x -= 0.1f;
@@ -28,7 +28,7 @@ public class BirdBehavior : MonoBehaviour
             uusiUloste.transform.position = gameObject.transform.position;
         }
 
-        if (transform.position.x < pelaaja.transform.position.x - 2f && transform.position.x > pelaaja.transform.position.x - 100f)
+        if (transform.position.x < pelaaja.transform.position.x - 5f && transform.position.x > pelaaja.transform.position.x - 100f)
             Destroy(gameObject);
     }
 }
