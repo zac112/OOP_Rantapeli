@@ -1,17 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Damage : MonoBehaviour
 {
     int hp = 3;
+
+    string level;
     public GameObject h1;
     public GameObject h2;
     public GameObject h3;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        level = SceneManager.GetActiveScene().name;
     }
 
 
@@ -36,6 +40,7 @@ public class Damage : MonoBehaviour
                 h1.transform.gameObject.SetActive(false);
                 hp--;
                 Destroy(collision.gameObject);
+                SceneManager.LoadScene(level);
             }
         }
         // Update is called once per frame
