@@ -1774,7 +1774,7 @@ Animator:
   m_GameObject: {fileID: 1217773490}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 06eb817746983f744a137caf07c1c720, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3a8f12e8570f5584c8133502f56a046c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1985,7 +1985,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -556736067
-  m_SortingLayer: -1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ff8713dce3cc8c54c943bc95b823e9c0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2022,7 +2022,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3077e20b7a4cf02498af5294d12dca6d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e0c105bdab3844d45882ba75be29d839, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2716,7 +2716,7 @@ PrefabInstance:
     - target: {fileID: 6363854759774685688, guid: 9aff242992ee67b408cb4f86c73fd2df,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.06
+      value: 3.45
       objectReference: {fileID: 0}
     - target: {fileID: 6363854759774685695, guid: 9aff242992ee67b408cb4f86c73fd2df,
         type: 3}
