@@ -1,18 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class KillTrigger : MonoBehaviour
 {
+    string level;
     void Start()
     {
+        level = SceneManager.GetActiveScene().name;
         Collider2D player = GetComponent<Collider2D>();
     }
 
     void OnTriggerEnter2D(Collider2D player){
         if (player.tag == "Player"){
-            player.transform.localPosition = new Vector3(-9.949f, -1.691f, 0.0f);
-            Debug.Log("asd");
+           SceneManager.LoadScene(level);
          }
     }
    

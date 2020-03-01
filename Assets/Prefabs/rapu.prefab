@@ -31,6 +31,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: rapu
       objectReference: {fileID: 0}
+    - target: {fileID: 4570035978399869345, guid: 5fc5dfadd5f88694b9f68a7a5326ccb8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 4570035978399869351, guid: 5fc5dfadd5f88694b9f68a7a5326ccb8,
         type: 3}
       propertyPath: m_LocalPosition.x
