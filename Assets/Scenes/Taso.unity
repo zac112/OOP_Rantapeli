@@ -199,7 +199,7 @@ Transform:
   m_GameObject: {fileID: 1080997692}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.098, y: -4.49, z: -2.171875}
-  m_LocalScale: {x: 4.056416, y: 1.0712458, z: 1.6480707}
+  m_LocalScale: {x: 6.2367396, y: 1.0712458, z: 1.6480707}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 1422990789}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -349,6 +349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35dbd00fbc30c1b4dabb9bc21356a19c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 1
 --- !u!50 &1422990786
 Rigidbody2D:
   serializedVersion: 4
@@ -520,7 +521,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.04131
+  orthographic size: 7.0488687
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

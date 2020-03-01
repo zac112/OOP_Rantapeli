@@ -7,7 +7,8 @@ public class Drop : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        var rigidbody2D = GetComponent<Rigidbody2D>();
+        rigidbody2D.velocity = new Vector2(Random.Range(-3f, 0), 0f);
     }
 
     // Update is called once per frame
@@ -18,6 +19,9 @@ public class Drop : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Object.Destroy(gameObject);
+        if (!collision.gameObject.tag.Equals("Pile"))
+        {
+            Object.Destroy(gameObject);
+        }
     }
 }

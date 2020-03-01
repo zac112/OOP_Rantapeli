@@ -16,8 +16,8 @@ public class Spawn : MonoBehaviour
     {
         while (true)
         {
-            Instantiate(spawnObject, new Vector3(Random.Range(10.91f, 15f), Random.Range(3.2f, 6f), -2.171875f), Quaternion.identity);
-            yield return new WaitForSeconds(3f);
+            Instantiate(spawnObject, new Vector3(15f, Random.Range(4f, 6.2f), -2.171875f), Quaternion.identity);
+            yield return new WaitForSeconds(Random.Range(0.5f, 1.5f));
         }
     }
 }

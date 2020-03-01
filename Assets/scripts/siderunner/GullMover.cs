@@ -5,11 +5,12 @@ using UnityEngine;
 public class GullMover : MonoBehaviour
 {
     [SerializeField]
-    private float speed = 1;
+    private float speed;
 
     // Start is called before the first frame update
     void Start()
     {
+        speed = speed * Random.Range(0.6f, 1.6f);
         StartCoroutine("Move");
     }
 

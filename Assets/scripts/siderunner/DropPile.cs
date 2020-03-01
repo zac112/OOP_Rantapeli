@@ -20,7 +20,7 @@ public class DropPile : MonoBehaviour
             Vector3 position = this.transform.position;
             position.y = position.y - 1f;
             Instantiate(pile, position, new Quaternion(0, 0, 0, 0));
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(Random.Range(0.5f, 2f));
         }
     }
 }
