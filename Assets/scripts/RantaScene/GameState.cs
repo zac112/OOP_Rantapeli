@@ -37,6 +37,8 @@ public class GameState : MonoBehaviour
     public static void WinRun() {
         singleton.LoadRantaScene();
         print("WON!");
+        Level levelUp = (Level)FindObjectOfType(typeof(Level));
+        levelUp.UpdateXp(25);
     }
 
     public static void LoseGame()
@@ -46,6 +48,10 @@ public class GameState : MonoBehaviour
 
     public static void WinGame()
     {
-
+        Level levelUp = (Level)FindObjectOfType(typeof(Level));
+        int level = levelUp.GetXP();
+        if(level == 100){
+            
+        }
     }
 }

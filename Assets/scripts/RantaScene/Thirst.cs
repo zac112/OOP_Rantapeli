@@ -19,16 +19,19 @@ public class Thirst : MonoBehaviour
 
     public void Drink()
     {
-        thirst++;
-        GetComponent<Maski>().MoveItem(thirst);
+        thirst += 10;
+        GetComponent<XPMask>().MoveItem(thirst);
     }
+
+    
+
     private IEnumerator ThirstGrow()
     {
         while (true)
         {
             yield return new WaitForSeconds(waitTime);
             thirst--;
-            GetComponent<Maski>().MoveItem(thirst);
+            GetComponent<XPMask>().MoveItem(thirst);
             Debug.Log(thirst);
             if (thirst == 0)
             {
