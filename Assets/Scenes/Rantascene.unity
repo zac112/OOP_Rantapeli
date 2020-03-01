@@ -405,7 +405,7 @@ MonoBehaviour:
   waypoints:
   - {fileID: 938030246}
   - {fileID: 804598010}
-  scenes: 0100000002000000
+  scenes: 01000000
   siirtymaPic: {fileID: 2118371506}
 --- !u!95 &277660326
 Animator:
@@ -1146,12 +1146,12 @@ PrefabInstance:
     - target: {fileID: 9221812636338788121, guid: e762f953d1e0d6c4ea62b98f1705fe77,
         type: 3}
       propertyPath: maxWaitTime
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9221812636338788121, guid: e762f953d1e0d6c4ea62b98f1705fe77,
         type: 3}
       propertyPath: minWaitTime
-      value: 15
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e762f953d1e0d6c4ea62b98f1705fe77, type: 3}
