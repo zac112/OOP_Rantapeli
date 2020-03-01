@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Trigger1 : MonoBehaviour
 {
-    public float aika = 3;
+    public float aika = 1.5f;
     public float loppu = 10;
     // Start is called before the first frame update
     void Start()
