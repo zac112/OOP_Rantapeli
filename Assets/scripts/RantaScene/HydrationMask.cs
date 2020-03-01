@@ -4,6 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
+
+/*
+ * Skripti, joka siirtelee keltaisen nesteytyspalkin maskia eli nesteytyspalkin täyttöastetta
+ * janoisuuden (syötettä Thirst-skriptiltä) mukaan.
+ */
+
 public class HydrationMask : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -27,7 +33,7 @@ public class HydrationMask : MonoBehaviour
     [SerializeField]
     Transform tyhja = null;
 
-
+        // Pitäisi ottaa jotenkin syötettä Thirst-skriptiltä
     public void MoveItem(int prosent)
     {
         Debug.Log("saatu " + prosent);
