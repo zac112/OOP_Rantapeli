@@ -8,6 +8,7 @@ public class CutSceneTimer : MonoBehaviour
     [SerializeField] Sprite binocs = null;
     [SerializeField] GameObject[] waypoints = null;
     [SerializeField] int[] scenes;
+    [SerializeField] GameObject siirtymaPic = null;
 
     private float timer = 0f;
     private float timerLimit = 3f;
@@ -25,7 +26,9 @@ public class CutSceneTimer : MonoBehaviour
 
     private IEnumerator Binocs() {
         GetComponent<SpriteRenderer>().sprite = binocs;
+        siirtymaPic.SetActive(true);
         yield return new WaitForSeconds(3f);
+        siirtymaPic.SetActive(false);
     }
 
     private IEnumerator RunSave()
