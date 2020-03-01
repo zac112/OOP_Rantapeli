@@ -18,10 +18,12 @@ public class Liike : MonoBehaviour
 
     IEnumerator Fly()
     {
+        while(true){
         yield return FlyStraight(startDelay);
         yield return FlyDown();
         yield return FlyStraight(bottomTime);
         yield return FlyUp();
+        }
     }
 
     IEnumerator FlyStraight(float flyTime)
