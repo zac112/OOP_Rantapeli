@@ -13,7 +13,7 @@ public class Level : MonoBehaviour
         XP += x;
         
             
-        gameObject.GetComponent<Maski>().MoveItem(x);
+        gameObject.GetComponent<XPMask>().MoveItem(x);
 
         if(XP > 100){
             XP=0;

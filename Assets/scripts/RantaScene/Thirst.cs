@@ -20,7 +20,7 @@ public class Thirst : MonoBehaviour
     public void Drink()
     {
         thirst++;
-        GetComponent<Maski>().MoveItem(thirst);
+        GetComponent<XPMask>().MoveItem(thirst);
     }
 
     /*
@@ -37,7 +37,7 @@ public class Thirst : MonoBehaviour
         {
             yield return new WaitForSeconds(waitTime);
             thirst--;
-            GetComponent<Maski>().MoveItem(thirst);
+            GetComponent<XPMask>().MoveItem(thirst);
             Debug.Log(thirst);
             if (thirst == 0)
             {
