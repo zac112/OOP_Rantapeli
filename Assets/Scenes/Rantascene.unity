@@ -1099,12 +1099,12 @@ PrefabInstance:
     - target: {fileID: 9221812636338788121, guid: e762f953d1e0d6c4ea62b98f1705fe77,
         type: 3}
       propertyPath: maxWaitTime
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9221812636338788121, guid: e762f953d1e0d6c4ea62b98f1705fe77,
         type: 3}
       propertyPath: minWaitTime
-      value: 2
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e762f953d1e0d6c4ea62b98f1705fe77, type: 3}
