@@ -29,8 +29,21 @@ public class GameState : MonoBehaviour
         SceneManager.LoadScene("Rantascene");
     }
 
+    private void LoadMainMenu(){
+        SceneManager.LoadScene("MainMenu");
+    }
+
     private void LoadWinScene() { 
         SceneManager.LoadScene("WinScene");
+
+
+        Invoke("LoadMainMenu", 15.0f);
+
+    }
+
+    private void LoadLoseScene(){
+        SceneManager.LoadScene("LoseScene");
+        Invoke("LoadMainMenu", 15.0f);
     }
 
     public static void LoseRun() {
@@ -47,12 +60,14 @@ public class GameState : MonoBehaviour
 
     public static void LoseGame()
     {
-
+        
+        singleton.LoadLoseScene();
+        
     }
 
     public static void WinGame()
     {
-        Level levelUp = (Level)FindObjectOfType(typeof(Level));
+        Level levelUp = FindObjectOfType<Level>();
         int level = levelUp.GetXP();
         if(level == 100){
             singleton.LoadWinScene();

@@ -31,7 +31,7 @@ public class DeathCounter : MonoBehaviour
     {
         if (deathCount >= deathLimit)
         {
-            print("Häviö");
+            GameState.LoseGame();
         }
     }
 
