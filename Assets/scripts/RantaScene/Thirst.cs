@@ -19,7 +19,7 @@ public class Thirst : MonoBehaviour
 
     public void Drink()
     {
-        thirst++;
+        thirst += 10;
         GetComponent<XPMask>().MoveItem(thirst);
     }
 
