@@ -5,7 +5,8 @@ using UnityEngine;
 public class lokkiSpawner : MonoBehaviour
 {
     public GameObject lokki;
-
+    public float minProjectileDelay;
+    public float maxProjectileDelay;
     void Start() {
         
         StartCoroutine(brug());
@@ -13,7 +14,7 @@ public class lokkiSpawner : MonoBehaviour
 
     IEnumerator brug(){
         while(true){
-            yield return new WaitForSeconds(Random.Range(3,5));
+            yield return new WaitForSeconds(Random.Range(minProjectileDelay,maxProjectileDelay));
             Instantiate(lokki, this.transform);
         }
     }
