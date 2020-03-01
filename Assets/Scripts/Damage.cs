@@ -11,30 +11,36 @@ public class Damage : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
-     private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            if(hp==3){
-            h3.transform.gameObject.SetActive(false);
-        hp--;
+            if (hp == 3)
+            {
+                h3.transform.gameObject.SetActive(false);
+                hp--;
+                Destroy(collision.gameObject);
+            }
+            else if (hp == 2)
+            {
+                h2.transform.gameObject.SetActive(false);
+                hp--;
+                Destroy(collision.gameObject);
+            }
+            else if (hp == 1)
+            {
+                h1.transform.gameObject.SetActive(false);
+                hp--;
+                Destroy(collision.gameObject);
+            }
         }
-        else if(hp==2){
-             h2.transform.gameObject.SetActive(false);
-             hp--;
-        }
-        else if(hp==1){
-             h1.transform.gameObject.SetActive(false);
-             hp--;
-        }
-    }
-    // Update is called once per frame
-    void Update()
-    {
+        // Update is called once per frame
+        void Update()
+        {
 
+        }
     }
-}
 }
