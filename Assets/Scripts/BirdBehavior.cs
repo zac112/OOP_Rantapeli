@@ -28,7 +28,7 @@ public class BirdBehavior : MonoBehaviour
             uusiUloste.transform.position = gameObject.transform.position;
         }
 
-        if (transform.position.x < pelaaja.transform.position.x - 2f)
+        if (transform.position.x < pelaaja.transform.position.x - 2f && transform.position.x > pelaaja.transform.position.x - 100f)
             Destroy(gameObject);
     }
 }
