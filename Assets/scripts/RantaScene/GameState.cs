@@ -29,6 +29,10 @@ public class GameState : MonoBehaviour
         SceneManager.LoadScene("Rantascene");
     }
 
+    private void LoadWinScene() { 
+        SceneManager.LoadScene("WinScene");
+    }
+
     public static void LoseRun() {
         singleton.LoadRantaScene();
         print("LOST!");
@@ -51,7 +55,7 @@ public class GameState : MonoBehaviour
         Level levelUp = (Level)FindObjectOfType(typeof(Level));
         int level = levelUp.GetXP();
         if(level == 100){
-            
+            singleton.LoadWinScene();
         }
     }
 }
