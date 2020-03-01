@@ -8,7 +8,7 @@ public class PlayerMove : MonoBehaviour
     public float faster = 1.2f;
     public float slower = 0.8f;
 
-    private float multiplier = 1;
+    public float multiplier = 1;
      public Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
