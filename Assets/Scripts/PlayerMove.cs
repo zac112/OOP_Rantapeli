@@ -24,7 +24,6 @@ public class PlayerMove : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.D)) {
            multiplier = faster;
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = sprite;
         }
         else if (Input.GetKey(KeyCode.A))
         {
