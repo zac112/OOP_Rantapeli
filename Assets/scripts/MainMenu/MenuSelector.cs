@@ -41,7 +41,7 @@ public class MenuSelector : MonoBehaviour
             {
                 if (i == 0)
                 {
-                    SceneManager.LoadScene(0);
+                    SceneManager.LoadScene("Rantascene");
                 }
                 if (i == 1)
                 {
