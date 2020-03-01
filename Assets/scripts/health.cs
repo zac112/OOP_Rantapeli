@@ -11,7 +11,7 @@ public class health : MonoBehaviour
     public GameObject heartImage;
     public GameObject deathText;
 
-    void getDamage(){
+    public void getDamage(){
         heartImage.GetComponent<ShowHP>().HP--;
         healthPoints--;
         if(healthPoints <= 0){

@@ -20,16 +20,10 @@ public class Thirst : MonoBehaviour
     public void Drink()
     {
         thirst++;
-        GetComponent<Maski>().MoveItem(thirst);
+        GetComponent<XPMask>().MoveItem(thirst);
     }
 
-    /*
-     * getteri HydrationMaskia varten, joka liikkuu janoisuusasteen mukaan
-     */
-    public int getThirst()
-    {
-        return thirst;
-    }
+    
 
     private IEnumerator ThirstGrow()
     {
@@ -37,7 +31,7 @@ public class Thirst : MonoBehaviour
         {
             yield return new WaitForSeconds(waitTime);
             thirst--;
-            GetComponent<Maski>().MoveItem(thirst);
+            GetComponent<XPMask>().MoveItem(thirst);
             Debug.Log(thirst);
             if (thirst == 0)
             {
