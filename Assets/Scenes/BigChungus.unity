@@ -813,8 +813,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lokki: {fileID: 3539731597050159013, guid: 4f5313d91b0d90e45a5c27d33994d058, type: 3}
-  minProjectileDelay: 0.5
-  maxProjectileDelay: 2
+  minProjectileDelay: 1.5
+  maxProjectileDelay: 3
 --- !u!1 &1266509682
 GameObject:
   m_ObjectHideFlags: 0
