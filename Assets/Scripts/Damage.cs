@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Damage : MonoBehaviour
 {
-    int hp = 3;
+    int hp = 6;
     public GameObject h1;
     public GameObject h2;
     public GameObject h3;
@@ -14,7 +14,7 @@ public class Damage : MonoBehaviour
         
     }
 
-     private void OnCollisionEnter2D(Collision2D collision)
+     private void OnColliderEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Enemy")
         {
