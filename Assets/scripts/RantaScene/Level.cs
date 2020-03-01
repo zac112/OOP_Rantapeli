@@ -11,8 +11,7 @@ public class Level : MonoBehaviour
     public void UpdateXp(int x)
     {
         XP += x;
-        
-         if(XP > 100){
+        if(XP > 100){
             XP=0;
         }   
         gameObject.GetComponent<XPMask>().MoveItem(XP);
