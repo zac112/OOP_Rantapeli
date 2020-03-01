@@ -405,7 +405,7 @@ MonoBehaviour:
   waypoints:
   - {fileID: 938030246}
   - {fileID: 804598010}
-  scenes: 02000000030000000400000005000000
+  scenes: 020000000300000004000000
   siirtymaPic: {fileID: 2118371506}
 --- !u!95 &277660326
 Animator:
