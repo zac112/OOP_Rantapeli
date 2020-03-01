@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class GullMover : MonoBehaviour
 {
+    [SerializeField]
+    private float speed = 1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -12,11 +15,9 @@ public class GullMover : MonoBehaviour
 
     IEnumerator Move() {
         while (true) {
-            Vector3 position = this.transform.position;
-            position.x = position.x - 0.05f;
-            this.transform.position = position;
-            yield return new WaitForSeconds(0.005f);
-            //yield return null;
+            Vector3 position = new Vector3(-0.1f,0);
+            transform.position += position * Time.deltaTime * speed;
+            yield return null;
         }
     }
 
