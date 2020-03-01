@@ -49,7 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minLifeTime: 5
   maxLifeTime: 5
-  death: {fileID: 378057991277762892, guid: d1ce1d73f315dfa44825bc44c76857ba, type: 3}
+  death: {fileID: 5606726440434991869, guid: 339d1ce0108bd9e47ab7af7e70b62651, type: 3}
 --- !u!212 &3125947099866688203
 SpriteRenderer:
   m_ObjectHideFlags: 0
