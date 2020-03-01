@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Rantascene.unity
+    guid: 1ec83a48e1b8fb74a8c7825e29006865
+  - enabled: 1
+    path: Assets/Scenes/Rantajuoksu1.unity
+    guid: 79910c5c52398f04ab98d7acf55eca51
+  - enabled: 1
+    path: Assets/Scenes/LevelX.unity
+    guid: b91a6084349b4d443945cffcb35203f6
   m_configObjects: {}
