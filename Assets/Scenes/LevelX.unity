@@ -475,7 +475,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 106b81e754183f64fb65255dcde46422, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -506,8 +506,9 @@ GameObject:
   - component: {fileID: 750872216}
   - component: {fileID: 750872219}
   - component: {fileID: 750872215}
-  - component: {fileID: 750872221}
   - component: {fileID: 750872220}
+  - component: {fileID: 750872222}
+  - component: {fileID: 750872221}
   m_Layer: 2
   m_Name: ukko
   m_TagString: Untagged
@@ -620,7 +621,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 750872214}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.173, y: 0.01, z: 0}
+  m_LocalPosition: {x: -7.14, y: -0.07, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 178352308}
@@ -654,7 +655,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 750872214}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca40328b90d99d7419c79c334df11aa1, type: 3}
+  m_Script: {fileID: 11500000, guid: 004960f4c4f6fe543848be82ab05d5ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   healthPoints: 3
@@ -662,10 +663,22 @@ MonoBehaviour:
   checker: {fileID: 178352308}
   EnemyLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1
   heartImage: {fileID: 684509159}
   deathText: {fileID: 0}
---- !u!95 &750872221
+--- !u!114 &750872221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750872214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5244eefad575e9a4283c12083156cbe7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &750872222
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -675,7 +688,7 @@ Animator:
   m_GameObject: {fileID: 750872214}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 951615ad7c581bb41878ce9b56431544, type: 2}
+  m_Controller: {fileID: 9100000, guid: be73e3f8f776688419790c1c195c55b7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
