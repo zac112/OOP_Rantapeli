@@ -59,6 +59,7 @@ public class MenuSelector : MonoBehaviour
             yield return null;
         }
     }
+    //Creditsien näyttäminen
     IEnumerator CreditScene()
     {
         credits.GetComponent<Transform>().position += new Vector3(0, 0, -3);
