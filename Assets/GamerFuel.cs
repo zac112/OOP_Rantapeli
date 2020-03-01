@@ -8,7 +8,7 @@ public class GamerFuel : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other){
         if(other.gameObject.tag == "Player"){
-            gamer.GetComponent<movement1>().jumpForce *= 2;
+            gamer.GetComponent<movement1>().jumpForce *= 1.5f;
             Destroy(this.gameObject);
         }
 

@@ -10,7 +10,7 @@ public class BirdGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("CreateBird", 4, Random.Range(5,10));
+        InvokeRepeating("CreateBird", 0, Random.Range(3,7));
     }
 
     // Update is called once per frame
