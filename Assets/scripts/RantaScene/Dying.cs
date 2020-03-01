@@ -23,6 +23,6 @@ public class Dying : MonoBehaviour
         yield return new WaitForSeconds(Random.Range(minLifeTime, maxLifeTime));
         Object.Destroy(gameObject);
         Instantiate(death, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
-        deathCounterScript.deathCount++;
+        deathCounterScript.DeathChange();
     }
 }
