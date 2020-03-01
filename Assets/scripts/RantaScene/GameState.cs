@@ -54,13 +54,13 @@ public class GameState : MonoBehaviour
     public static void WinRun() {
         singleton.LoadRantaScene();
         print("WON!");
-        Level levelUp = (Level)FindObjectOfType(typeof(Level));
+        Level levelUp = FindObjectOfType<Level>();
         levelUp.UpdateXp(25);
     }
 
     public static void LoseGame()
     {
-        
+
         singleton.LoadLoseScene();
         
     }
