@@ -6,8 +6,12 @@ using System;
 
 
 /*
- * Skripti, joka siirtelee keltaisen nesteytyspalkin maskia eli nesteytyspalkin täyttöastetta
- * janoisuuden (syötettä Thirst-skriptiltä) mukaan.
+ * Skripti, joka siirtelee keltaisen nesteytyspalkin maskia 
+ * - Ajan kuluminen lisää janoisuutta
+ *      - tätä varten coroutine
+ * - Veden juominen vähentää janoisuutta
+ *      - metodi
+ * - Kun nesteytyspalkki on nollassa, peli päättyy
  */
 
 public class HydrationMask : MonoBehaviour
@@ -15,7 +19,9 @@ public class HydrationMask : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        IEnumerator coroutine = HydrationLevel();
+        StartCoroutine(coroutine);
+
     }
 
     // Update is called once per frame
@@ -23,8 +29,28 @@ public class HydrationMask : MonoBehaviour
     {
 
 
-        // Tästä alaspäin sisältö kopioitu skriptistä XPMask.cs, sisältöä kehitetään
+  
     }
+
+    // ei toimi ainakaan näin
+    private IEnumerator HydrationLevel()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(waitTime);
+            HydrationLevel--;
+            GetComponent<HydrationMask>().MoveItem(thirst);
+            Debug.Log(thirst);
+            if (thirst == 0)
+            {
+                Object.Destroy(gameObject);
+                GameState.LoseGame();
+            }
+        }
+
+    }
+
+    // Tästä alaspäin sisältö kopioitu skriptistä XPMask.cs, sisältöä kehitetään
 
     [SerializeField]
     GameObject mask = null;
@@ -34,7 +60,7 @@ public class HydrationMask : MonoBehaviour
     Transform tyhja = null;
 
         // Pitäisi ottaa jotenkin syötettä Thirst-skriptiltä
-    public void MoveItem(int prosent)
+    public void MoveItem(int thirst)
     {
         Debug.Log("saatu " + prosent);
         float etaisyys = Math.Abs(taysi.localPosition.x - tyhja.localPosition.x);
