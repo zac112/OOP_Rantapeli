@@ -17,7 +17,6 @@ public class MenuSelector : MonoBehaviour
     }
     IEnumerator Valinta()
     {
-        Debug.Log("Heey");
         while (true)
         {
             //Nuolen pyöritys
