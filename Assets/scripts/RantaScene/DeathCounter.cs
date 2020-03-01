@@ -36,7 +36,7 @@ public class DeathCounter : MonoBehaviour
     {
         if (deathCount >= deathLimit)
         {
-            print("Häviö");
+            GameState.LoseGame();
         }
 
         //if (SceneManager.GetSceneByName("Rantascene").isLoaded)

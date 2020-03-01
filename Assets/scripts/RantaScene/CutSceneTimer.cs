@@ -12,15 +12,23 @@ public class CutSceneTimer : MonoBehaviour
 
     private float timer = 0f;
     private float timerLimit = 3f;
+    private bool running = false;
     // Start is called before the first frame update
     public void GoSaveVictims()
     {
-        StartCoroutine("CutScene");
+        if (!running)
+        {
+            running = true;
+            Clicking.clickAllowed = false;
+            StartCoroutine("CutScene");
+        }
     }
 
     IEnumerator CutScene() {
         yield return Binocs();
         yield return RunSave();
+        running = false;
+        Clicking.clickAllowed = true;
         LoadRunningScene();
     }
 
