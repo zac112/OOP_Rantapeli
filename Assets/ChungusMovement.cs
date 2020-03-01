@@ -21,16 +21,19 @@ public class ChungusMovement : MonoBehaviour
         Vector2 targetPos = new Vector2(target.transform.position.x, 0);
         Vector2 myPos = new Vector2(transform.position.x, 0);
         Vector2 direction = targetPos - myPos;
-        GetComponent<Rigidbody2D>().velocity = direction * brug;
-        if(counter % 180 == 0) jump();
-        counter++;
+        rb.velocity += direction * brug;
     }
 
+    void Update()
+    {
+        if(counter % 200 == 0) jump();
+        counter++;   
+    }
     void jump()
     {   
         //Debug.Log();
-        rb.AddForce(new Vector2(0f, jumpForce*1000));
-        Debug.Log("Here2");
+        rb.AddForce(new Vector2(0f, jumpForce));
+        //Debug.Log("Here2");
     }
 
 
