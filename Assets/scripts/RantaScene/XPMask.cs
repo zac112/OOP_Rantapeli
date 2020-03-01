@@ -13,21 +13,28 @@ public class XPMask : MonoBehaviour
     [SerializeField]
     Transform tyhja = null;
 
-
-
-
-    public void MoveItem(int prosent)
-{
-    Debug.Log("saatu "+prosent);
-    float etaisyys = Math.Abs(taysi.localPosition.x - tyhja.localPosition.x);
-    float move = etaisyys * (prosent/100f);
+    public Boolean tyhjenee = false;
 
     
 
-    float x= tyhja.localPosition.x-move;
-    float y = mask.transform.localPosition.y;
-    float z = mask.transform.localPosition.z; 
-    mask.transform.localPosition = new UnityEngine.Vector3(x,y,z);
-}
+    public void MoveItem(int prosent)
+    {
+
+        float etaisyys = Math.Abs(taysi.localPosition.x - tyhja.localPosition.x);
+        float move = etaisyys * (prosent/100f);
+        float x;
+
+        if(tyhjenee)
+        {
+            x= tyhja.localPosition.x-move;
+        }
+        else
+        {
+            x= taysi.localPosition.x+move;
+        }
+            float y = mask.transform.localPosition.y;
+            float z = mask.transform.localPosition.z; 
+            mask.transform.localPosition = new UnityEngine.Vector3(x,y,z);
+    }
 
 }
