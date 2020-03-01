@@ -42,6 +42,9 @@ public class Damage : MonoBehaviour
                 Destroy(collision.gameObject);
                 SceneManager.LoadScene(level);
             }
+            if(hp==0){
+                GameState.LoseRun();
+            }
         }
         // Update is called once per frame
         void Update()
