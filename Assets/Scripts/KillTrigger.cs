@@ -5,16 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class KillTrigger : MonoBehaviour
 {
-    string level;
+    
     void Start()
     {
-        level = SceneManager.GetActiveScene().name;
         Collider2D player = GetComponent<Collider2D>();
     }
 
     void OnTriggerEnter2D(Collider2D player){
         if (player.tag == "Player"){
-           SceneManager.LoadScene(level);
+           GameState.LoseRun();
          }
     }
    
