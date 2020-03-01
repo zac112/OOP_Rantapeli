@@ -6,8 +6,11 @@ using UnityEngine.SceneManagement;
 public class MenuSelector : MonoBehaviour
 {
     public float xAngle, yAngle;
+    public int creditTime;
     [SerializeField]
     GameObject[] points;
+    [SerializeField]
+    GameObject credits;
     int i = 0;
     // Start is called before the first frame update
     void Start()
@@ -44,7 +47,9 @@ public class MenuSelector : MonoBehaviour
                 }
                 if (i == 1)
                 {
-                    SceneManager.LoadScene(0);
+                    IEnumerator coroutine = CreditScene();
+                    StartCoroutine(coroutine);
+                    yield return new WaitForSeconds(creditTime);
                 }
                 if (i == 2)
                 {
@@ -53,5 +58,11 @@ public class MenuSelector : MonoBehaviour
             }
             yield return null;
         }
+    }
+    IEnumerator CreditScene()
+    {
+        credits.GetComponent<Transform>().position += new Vector3(0, 0, -3);
+        yield return new WaitForSeconds(creditTime);
+        credits.GetComponent<Transform>().position += new Vector3(0, 0, 3);
     }
 }
