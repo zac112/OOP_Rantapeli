@@ -6,6 +6,8 @@ public class CrabMovement : MonoBehaviour
 {
     public float speed;
     Rigidbody2D rb;
+    public LayerMask groundLayer;
+
 
     // Start is called before the first frame update
     void Start()
@@ -19,9 +21,12 @@ public class CrabMovement : MonoBehaviour
         rb.velocity = new Vector2(speed, 0f);
     }
 
-    void onCollisionEnter(Collision col)
+    void OnCollisionEnter2D(Collision2D col)
     {
-        Debug.Log("lol");
-        speed = (-speed);
+        if(!(col.gameObject.layer == 8))
+        {
+            Debug.Log("toimii");
+            speed = (-speed);
+        }
     }
 }
