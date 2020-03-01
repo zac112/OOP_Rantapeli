@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6363854759639308540}
   m_Layer: 0
   m_Name: Player 1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -163,6 +163,7 @@ MonoBehaviour:
   speed: 5
   faster: 1.5
   slower: 0.5
+  multiplier: 1
   rb: {fileID: 0}
 --- !u!1 &6363854759218268559
 GameObject:
