@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class Goal : MonoBehaviour
 {
-    public string nextScene;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +15,7 @@ public class Goal : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene(nextScene, LoadSceneMode.Additive);
+            GameState.WinRun();
         }
     }
     // Update is called once per frame
