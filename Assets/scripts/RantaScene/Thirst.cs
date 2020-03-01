@@ -22,6 +22,15 @@ public class Thirst : MonoBehaviour
         thirst++;
         GetComponent<Maski>().MoveItem(thirst);
     }
+
+    /*
+     * getteri HydrationMaskia varten, joka liikkuu janoisuusasteen mukaan
+     */
+    public int getThirst()
+    {
+        return thirst;
+    }
+
     private IEnumerator ThirstGrow()
     {
         while (true)
