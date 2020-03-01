@@ -9,12 +9,11 @@ public class ChungusMovement : MonoBehaviour
     public float jumpForce;
     GameObject target;
     Rigidbody2D rb;
-
+    int counter = 0;
     void Start()
     {
         target = GameObject.FindWithTag("Player");
         rb = GetComponent<Rigidbody2D>();
-        jump();
     }
 
     void FixedUpdate()
@@ -23,15 +22,15 @@ public class ChungusMovement : MonoBehaviour
         Vector2 myPos = new Vector2(transform.position.x, 0);
         Vector2 direction = targetPos - myPos;
         GetComponent<Rigidbody2D>().velocity = direction * brug;
+        if(counter % 180 == 0) jump();
+        counter++;
     }
 
-    IEnumerator jump()
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(Random.Range(8,12));
-            rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
-        }
+    void jump()
+    {   
+        //Debug.Log();
+        rb.AddForce(new Vector2(0f, jumpForce*1000));
+        Debug.Log("Here2");
     }
 
 
