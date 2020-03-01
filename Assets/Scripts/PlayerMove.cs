@@ -7,6 +7,7 @@ public class PlayerMove : MonoBehaviour
     public float speed = 5;
     public float faster = 1.2f;
     public float slower = 0.8f;
+    public Sprite sprite;
 
     public float multiplier = 1;
      public Rigidbody2D rb;
@@ -23,6 +24,7 @@ public class PlayerMove : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.D)) {
            multiplier = faster;
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = sprite;
         }
         else if (Input.GetKey(KeyCode.A))
         {
