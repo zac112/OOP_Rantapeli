@@ -6,6 +6,9 @@ TagManager:
   tags:
   - State
   - Tausta
+  - Enemy
+  - '"Maski"'
+  - trigger
   layers:
   - Default
   - TransparentFX
@@ -40,6 +43,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BG
+    uniqueID: 3738231229
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
