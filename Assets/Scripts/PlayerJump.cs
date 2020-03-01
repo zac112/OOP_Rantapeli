@@ -16,12 +16,16 @@ public class PlayerJump : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        isGrounded = true;
+        if(collision.gameObject.tag != "trigger"){
+            isGrounded = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        isGrounded = false;
+        if(collision.gameObject.tag != "trigger"){
+            isGrounded = false;
+        }
     }
 
     // Update is called once per frame
