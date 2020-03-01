@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class QuenchThirst : MonoBehaviour
 {
-    GameObject player;
-    private Thirst janoScripti;
+
+    public Thirst janoScripti;
 
     private void Start()
     {
-        player = GameObject.Find("ukko");
-        janoScripti = player.GetComponent<Thirst>();
+        janoScripti = GameObject.FindObjectOfType<Thirst>();
     }
 
     void OnMouseDown()
