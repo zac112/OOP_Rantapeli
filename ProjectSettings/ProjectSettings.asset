@@ -623,7 +623,10 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
+    Build: 0
     Collab: 1
+    ErrorHub: 0
+    Hub: 0
     UNet: 1
   luminIcon:
     m_Name: 
@@ -637,10 +640,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: fa14db1b-d512-4833-9a7f-18542b03f4e4
+  cloudProjectId: 60a1de35-ed86-4076-b309-d6cf7a541f41
   framebufferDepthMemorylessMode: 0
-  projectName: Rantapeli
-  organizationId: jarethecoder
+  projectName: Rantapeli (3)
+  organizationId: unity_wkf4nktukwfujg
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

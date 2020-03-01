@@ -15,7 +15,7 @@ public class PilviGenerator : MonoBehaviour
     	if(pilvet.Count<8)
     	{
     		uusiPilvi = Instantiate(pilvi);
-    		uusiPilvi.transform.position = new Vector3(pelaaja.position.x+10*(kerroin%8+1)+Random.Range(5,10),7+Random.Range(0,4),0);
+    		uusiPilvi.transform.position = new Vector3(pelaaja.position.x+10*(kerroin%8+1)+Random.Range(5,10),3+Random.Range(0,4),0);
     		pilvet.Add(uusiPilvi);
     		kerroin += 1;
     	}

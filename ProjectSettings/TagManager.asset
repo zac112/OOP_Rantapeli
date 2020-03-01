@@ -6,6 +6,9 @@ TagManager:
   tags:
   - State
   - Tausta
+  - Enemy
+  - '"Maski"'
+  - Hazard
   layers:
   - Default
   - TransparentFX
