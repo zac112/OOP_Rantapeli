@@ -4,8 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - State
-  - Tausta
+  - trigger
+  - '"Maski"'
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -40,6 +41,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2337992525
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
